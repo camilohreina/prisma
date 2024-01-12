@@ -1,27 +1,16 @@
-import { ColorPickerIcon } from '../icons/ColorPicker'
+import { ColorControl } from './ColorControl'
+import { ColorSetting } from './ColorSetting'
 
 export const ColorInfo = ({ color, title }: { color: string; title: string }) => {
     return (
-        <article class="">
+        <article className="flex flex-column gap-x-4 items-center">
             <figure
-                class="w-[60px] h-[60px] border shadow-md border-gray-300 rounded-r-lg rounded-bl-lg"
+                className="w-[70px] h-[70px] border shadow-md border-gray-300 rounded-r-lg rounded-bl-lg"
                 style={{ backgroundColor: color }}
             />
-            <p class="font-bold">{title}</p>
-
-            <div class="relative w-full">
-                <input
-                    type="picker"
-                    class="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-lg  border border-gray-300"
-                    placeholder="Color Picker"
-                    value={color}
-                />
-                <button
-                    type="submit"
-                    class="absolute top-0 end-0 p-2.5 h-full text-sm font-medium text-black rounded-e-lg  focus:ring-4 focus:outline-none "
-                >
-                    <ColorPickerIcon />
-                </button>
+            <div className="gap-y-4">
+                <p className="font-bold">{title}</p>
+                <ColorControl color={color} popover={<ColorSetting />} />
             </div>
         </article>
     )
