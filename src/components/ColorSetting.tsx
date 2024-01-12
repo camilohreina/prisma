@@ -67,7 +67,6 @@ export const ColorSetting = ({
                 </div>
                 <HexColorPicker className="!w-full !h-44" color={color} onChange={handleColorPickerChange} />
                 <div className="grid gap-3 mt-5">
-                    <p>Channels</p>
                     {channels.map((channel, index) => {
                         const mode = colorModes[colorMode]
 
