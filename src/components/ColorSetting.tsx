@@ -4,6 +4,8 @@ import { colorModes } from '../utils/helpers.ts'
 import * as Popover from '@radix-ui/react-popover'
 import { HexColorPicker } from 'react-colorful'
 import { useControllable } from '../hooks/useControllable.ts'
+import { InputChannel } from './InputChannel.tsx'
+import Color from 'color'
 
 //popover channel
 export const ColorSetting = ({
@@ -16,6 +18,31 @@ export const ColorSetting = ({
     const [color, setColor] = useControllable('#000', sourceColor, onChange)
     const [colorMode, setColorMode] = useState<keyof ColorMode>('rgb')
     const colorModesList = useMemo(() => Object.keys(colorModes), [])
+    const channels = useMemo(
+        () => colorModes[colorMode].converter(color).map((channel) => Math.floor(channel)),
+        [colorMode, color],
+    )
+
+    const updateChannel = (channels: number[], channelModified: number, channelIndexModified: number) => {
+        const nextChannels = [...channels]
+
+        nextChannels[channelIndexModified] = channelModified
+
+        return nextChannels
+    }
+
+    const handleColorPickerChange = (color: string) => {
+        setColor(color)
+    }
+
+    const handleChannelChange = (index: number) => (value: number | string) => {
+        const nextValue = parseInt(value.toString())
+        const nextChannels = updateChannel(channels, nextValue, index)
+        const resolvedColor = Color(nextChannels, colorMode).hex()
+
+        setColor(resolvedColor)
+    }
+
     return (
         <Popover.Portal>
             <Popover.Content
@@ -38,7 +65,24 @@ export const ColorSetting = ({
                         ))}
                     </select>
                 </div>
-                <HexColorPicker className="!w-full !h-44" color={color} />
+                <HexColorPicker className="!w-full !h-44" color={color} onChange={handleColorPickerChange} />
+                <div className="grid gap-3 mt-5">
+                    <p>Channels</p>
+                    {channels.map((channel, index) => {
+                        const mode = colorModes[colorMode]
+
+                        return (
+                            <InputChannel
+                                key={`${channel}-${mode.channels[index].label}`}
+                                label={mode.channels[index].label}
+                                max={mode.channels[index].max}
+                                min={mode.channels[index].min}
+                                value={channel}
+                                onChange={handleChannelChange(index)}
+                            />
+                        )
+                    })}
+                </div>
             </Popover.Content>
         </Popover.Portal>
     )
