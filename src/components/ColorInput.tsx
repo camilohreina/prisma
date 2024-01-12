@@ -13,7 +13,7 @@ export const ColorInput = ({ color }: { color: string }) => {
             <Popover.Trigger asChild>
                 <button
                     type="submit"
-                    className="absolute top-0 end-0 p-2.5 h-full text-sm font-medium text-black rounded-e-lg  focus:ring-4 focus:outline-none "
+                    className="absolute top-0 end-0 p-2.5 h-full text-sm font-medium text-black rounded-e-lg "
                 >
                     <ColorPickerIcon />
                 </button>
