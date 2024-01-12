@@ -26,8 +26,8 @@ export const ColorInput = ({ color, onChange }: { color: string; onChange?: (col
             <input
                 type="text"
                 className="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-lg  border border-gray-300"
-                placeholder="Color Picker"
-                value={color}
+                placeholder={fallback}
+                value={value}
                 onBlur={handleBlur}
                 onChange={handleChange}
             />

@@ -3,7 +3,7 @@ import { ColorSetting } from './ColorSetting'
 import { background } from '../store'
 import { useAtom } from 'jotai'
 
-export const ColorInfo = ({ title }: { title: string }) => {
+export const Background = () => {
     const [bg, setBg] = useAtom(background)
 
     return (
@@ -13,7 +13,7 @@ export const ColorInfo = ({ title }: { title: string }) => {
                 style={{ backgroundColor: bg }}
             />
             <div className="gap-y-4">
-                <p className="font-bold">{title}</p>
+                <p className="font-bold">Background Color</p>
                 <ColorControl
                     color={bg}
                     onChange={setBg}

@@ -1,9 +1,11 @@
 ---
-import { ColorInfo } from './ColorInfo.tsx'
+import { Background } from './Background.tsx'
+import { Foreground } from './Foreground.tsx'
 ---
 
 <section
     class="bg-white border border-gray-200 shadow-md rounded-lg gap-3 p-4 flex flex-wrap items-center justify-between"
 >
-    <ColorInfo client:load title="Background Color" />
+    <Background client:load />
+    <Foreground client:load />
 </section>
