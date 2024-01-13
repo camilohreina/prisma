@@ -2,7 +2,7 @@ export const Close = () => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" version="1.1">
             <title>Close</title>
-            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fill-rule="evenodd">
                 <g id="Close">
                     <rect id="Rectangle" fill-rule="nonzero" x="0" y="0" width="24" height="24"></rect>
                     <line
@@ -12,8 +12,8 @@ export const Close = () => {
                         y2="16.9999"
                         id="Path"
                         stroke="#FF0000"
-                        stroke-width="2"
-                        stroke-linecap="round"
+                        strokeWidth="2"
+                        strokeLinecap="round"
                     ></line>
                     <line
                         x1="7.00006"
@@ -22,8 +22,8 @@ export const Close = () => {
                         y2="16.9999"
                         id="Path"
                         stroke="#FF0000"
-                        stroke-width="2"
-                        stroke-linecap="round"
+                        strokeWidth="2"
+                        strokeLinecap="round"
                     ></line>
                 </g>
             </g>

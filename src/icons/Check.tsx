@@ -4,16 +4,16 @@ export const Check = () => {
             <path
                 d="M4 12.9L7.14286 16.5L15 7.5"
                 stroke="#008000"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
             />
             <path
                 d="M20 7.5625L11.4283 16.5625L11 16"
                 stroke="#008000"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
             />
         </svg>
     )
