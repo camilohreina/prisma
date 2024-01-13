@@ -9,7 +9,7 @@ export const ContrastResult = () => {
     const { passAAALargeText, passAAANormalText, passAALargeText, passAANormalText } = useAtomValue(wcagLevelsResult)
 
     return (
-        <section className="flex flex-col gap-8 mt-4 bg-white p-8 border border-gray-200 shadow-md rounded-lg">
+        <section className="flex flex-col gap-8  bg-white py-8 px-12 border border-gray-200 shadow-md rounded-lg">
             <ContrastScore />
             <ul className="grid grid-cols-2 gap-x-12 gap-y-5 ">
                 <ContrastLevel contrast="AA - 4.5:1" pass={passAANormalText} textType="normal" />

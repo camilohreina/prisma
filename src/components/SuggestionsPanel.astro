@@ -1,11 +1,15 @@
 ---
+import Idea from '../icons/Idea.astro'
 import { Suggestions } from './Suggestions'
 ---
 
 <section
-    class="bg-white border border-gray-200 shadow-md rounded-lg gap-8 py-8 px-12 flex flex-col flex-wrap justify-start"
+    class="bg-white border h-[548px] border-gray-200 shadow-md rounded-lg gap-8 py-8 px-12 flex flex-col justify-start"
 >
-    <header class="h-8 font-bold flex items-center sticky top-0 px-4 lg:px-8">Suggestions</header>
+    <header class="w-full h-8 font-bold flex items-center gap-4 top-0 px-4 lg:px-8">
+        <Idea class="rotate-180" />
+        Suggestions
+    </header>
     <div class="overflow-auto px-4 lg:px-8">
         <Suggestions client:load />
     </div>

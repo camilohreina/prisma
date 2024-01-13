@@ -5,9 +5,9 @@ import { ContrastResult } from './ContrastResult'
 ---
 
 <section class="grid grid-cols-2 gap-4">
-    <section>
-        <ColorPanel />
+    <section class="flex flex-col gap-4">
         <ContrastResult client:load />
+        <ColorPanel />
     </section>
     <SuggestionsPanel />
 </section>

@@ -7,7 +7,7 @@ export const Foreground = () => {
     const [fg, setFg] = useAtom(foreground)
 
     return (
-        <article className="flex flex-column gap-x-4 items-center">
+        <article className="flex flex-column gap-x-8 items-center">
             <figure
                 className="w-[70px] h-[70px] border shadow-md border-gray-300 rounded-r-lg rounded-bl-lg"
                 style={{ backgroundColor: fg }}

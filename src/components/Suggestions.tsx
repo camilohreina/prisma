@@ -31,7 +31,7 @@ export const Suggestions = ({ onApply, className }: SuggestionProps) => {
     return (
         <div className={`grid grid-cols-2 gap-5 ${className ?? ''}`}>
             {isEmpty ? (
-                <p>There is nothing more to suggest</p>
+                <p className="font-bold">There is nothing more to suggest</p>
             ) : (
                 <>
                     {suggestions.map((item) => (
@@ -53,7 +53,7 @@ const SuggestionItem = ({ contrast, bg, fg, onApply }: SuggestionItemProps) => {
     const handleOnClickApply = () => onApply?.(bg, fg)
 
     return (
-        <article className="border border-gray-100 rounded-lg overflow-hidden">
+        <article className="border border-gray-300 rounded-lg overflow-hidden">
             <section className="flex">
                 <div
                     className="aspect-[3/2] flex-1 flex items-center justify-center first:border-gray-100 first:border"
