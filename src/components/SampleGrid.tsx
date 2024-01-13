@@ -15,7 +15,7 @@ export const SampleGrid = () => {
 
     return (
         <ResponsiveMasonry
-            className="bg-white my-4 py-8 px-12 rounded-lg shadow"
+            className="bg-white my-4 py-8 px-12 rounded-lg shadow-md border border-gray-200"
             style={{ [fgVar as string]: fgRgb.join(' '), [bgVar as string]: bgRgb.join(' ') }}
             columnsCountBreakPoints={{ 0: 1, 640: 2, 1024: 3 }}
         >
