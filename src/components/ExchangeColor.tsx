@@ -8,6 +8,7 @@ export const ExchangeColor = () => {
     return (
         <div className="rotate-90">
             <button
+                aria-label="Swap colors"
                 className="border border-gray-300 shadow transition hover:bg-gray-100  font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center "
                 onClick={swap}
             >

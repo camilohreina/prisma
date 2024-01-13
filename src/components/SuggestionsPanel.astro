@@ -1,0 +1,12 @@
+---
+import { Suggestions } from './Suggestions'
+---
+
+<section
+    class="bg-white border border-gray-200 shadow-md rounded-lg gap-8 py-8 px-12 flex flex-col flex-wrap justify-start"
+>
+    <header class="h-8 font-bold flex items-center sticky top-0 px-4 lg:px-8">Suggestions</header>
+    <div class="overflow-auto px-4 lg:px-8">
+        <Suggestions client:load />
+    </div>
+</section>
