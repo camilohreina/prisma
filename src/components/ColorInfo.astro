@@ -1,12 +1,13 @@
 ---
 import ColorPanel from './ColorPanel.astro'
 import SuggestionsPanel from './SuggestionsPanel.astro'
+import { ContrastResult } from './ContrastResult'
 ---
 
 <section class="grid grid-cols-2 gap-4">
     <section>
         <ColorPanel />
-        <ColorPanel />
+        <ContrastResult client:load />
     </section>
     <SuggestionsPanel />
 </section>
