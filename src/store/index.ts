@@ -2,7 +2,7 @@ import { atom } from 'jotai'
 import Color from 'color'
 import { wcagContrastTest, contrastGuidelines } from '../lib/textContrast'
 
-export const background = atom<string>('#eee')
+export const background = atom<string>('#e5d9b8')
 export const foreground = atom<string>('#0a0908')
 
 const colors = atom((get) => {

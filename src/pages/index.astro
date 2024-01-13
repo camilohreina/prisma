@@ -2,11 +2,13 @@
 import Navbar from '../components/Navbar.astro'
 import Layout from '../layouts/Layout.astro'
 import ColorInfo from '../components/ColorInfo.astro'
+import { SecurityCard } from '../preview/SecurityCard.tsx'
 ---
 
 <Layout title="Prisma Colors">
     <main class="container mx-auto">
         <Navbar />
         <ColorInfo />
+        <SecurityCard client:load />
     </main>
 </Layout>
