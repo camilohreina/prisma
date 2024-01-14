@@ -6,6 +6,7 @@ import { fgVar, bgVar } from '../utils/helpers'
 import { SecurityCard } from '../preview/SecurityCard'
 import { Profile } from '../preview/Profile'
 import { Price } from '../preview/Price'
+import { AccountCompromised } from '../preview/AccountCompromised'
 
 export const SampleGrid = () => {
     const bg = useAtomValue(background)
@@ -23,6 +24,7 @@ export const SampleGrid = () => {
                 <SecurityCard />
                 <Profile />
                 <Price />
+                <AccountCompromised />
             </Masonry>
         </ResponsiveMasonry>
     )

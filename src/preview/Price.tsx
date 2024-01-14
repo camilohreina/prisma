@@ -2,7 +2,7 @@ import { cssBgVar, cssFgVar, applyStyle } from '../utils/helpers'
 
 export const Price = () => {
     return (
-        <div style={applyStyle('bg')} className="w-full p-4  border border-gray-200 rounded-lg shadow sm:p-8">
+        <article style={applyStyle('bg')} className="w-full p-4  border border-gray-200 rounded-lg shadow sm:p-8">
             <h5 style={applyStyle('color', { fromVar: cssFgVar, alpha: '0.6' })} className="mb-4 text-xl font-medium ">
                 Standard plan
             </h5>
@@ -161,6 +161,6 @@ export const Price = () => {
             >
                 Choose plan
             </button>
-        </div>
+        </article>
     )
 }

@@ -20,7 +20,7 @@ export const ContrastScore = () => {
     function getSemanticColor() {
         const levelScore = {
             poor: 'red',
-            good: 'yellow',
+            good: '#008000',
             'very-good': '#008000',
         }
 
