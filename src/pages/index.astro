@@ -1,14 +1,16 @@
 ---
 import Navbar from '../components/Navbar.astro'
+import Footer from '../components/Footer.astro'
 import Layout from '../layouts/Layout.astro'
 import ColorInfo from '../components/ColorInfo.astro'
 import { SampleGrid } from '../components/SampleGrid.tsx'
 ---
 
 <Layout title="Prisma Colors">
-    <main class="container mx-auto">
+    <main class="container mx-auto gap-2">
         <Navbar />
         <ColorInfo />
         <SampleGrid client:only="react" />
+        <Footer />
     </main>
 </Layout>
