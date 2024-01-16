@@ -7,6 +7,7 @@ import { SecurityCard } from '../preview/SecurityCard'
 import { Profile } from '../preview/Profile'
 import { Price } from '../preview/Price'
 import { AccountCompromised } from '../preview/AccountCompromised'
+import { Incoming } from '../preview/Incoming'
 
 export const SampleGrid = () => {
     const bg = useAtomValue(background)
@@ -25,6 +26,7 @@ export const SampleGrid = () => {
                 <Profile />
                 <Price />
                 <AccountCompromised />
+                <Incoming />
             </Masonry>
         </ResponsiveMasonry>
     )
