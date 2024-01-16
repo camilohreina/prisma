@@ -2,7 +2,10 @@ import { cssBgVar, cssFgVar, applyStyle } from '../utils/helpers'
 
 export const Profile = () => {
     return (
-        <article style={applyStyle('bg')} className="w-full bg-white border border-gray-200 rounded-lg shadow ">
+        <article
+            style={applyStyle('bg')}
+            className="flex items-center flex-col justify-center w-full bg-white border border-gray-200 rounded-lg shadow "
+        >
             <div className="flex flex-col items-center pb-10 px-4 pt-4">
                 <img className="w-24 h-24 mb-3 rounded-full shadow-lg" src="1.png" alt="xDiffernt profile" />
                 <h5 style={applyStyle('color')} className="mb-1 text-xl font-bold  dark:text-white">
