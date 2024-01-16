@@ -1,6 +1,4 @@
-# Prisma
-
-This simple app converts a screenshot to code (HTML/Tailwind CSS). It uses GPT-4 Vision to generate the code. You can now also enter a image URL!
+![og-prisma](https://github.com/camilohreina/prisma/assets/59514545/fc67be80-8e78-463d-9ac5-c76e94ac0c66)
 
 ## Technologies
 
