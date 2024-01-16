@@ -44,9 +44,6 @@ dependencies:
   react-colorful:
     specifier: ^5.6.1
     version: 5.6.1(react-dom@18.2.0)(react@18.2.0)
-  react-responsive-masonry:
-    specifier: ^2.1.7
-    version: 2.1.7
   tailwindcss:
     specifier: ^3.4.1
     version: 3.4.1
@@ -8629,10 +8626,6 @@ packages:
       tslib: 2.6.2
       use-callback-ref: 1.3.1(@types/react@18.2.47)(react@18.2.0)
       use-sidecar: 1.1.2(@types/react@18.2.47)(react@18.2.0)
-
-  /react-responsive-masonry@2.1.7:
-    resolution: {integrity: sha512-/jOqnTVNtO8zRJMTl6ZXBex7EFYEIFBLVlkIFjiCT7omfm0CgNF2z4ST8RIr0v2ut15NWAQs7Q3kJJPhMoe3Ew==}
-    dev: false
 
   /react-style-singleton@2.2.1(@types/react@18.2.47)(react@18.2.0):
     resolution: {integrity: sha512-ZWj0fHEMyWkHzKYUr2Bs/4zU6XLmq9HsgBURm7g5pAVfyn49DgUiNgY2d4lXRlYSiCif9YBGpQleewkcqddc7g==}

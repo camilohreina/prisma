@@ -4,7 +4,7 @@ export const SecurityCard = () => {
     return (
         <article
             style={applyStyle('bg')}
-            className="flex flex-col items-center border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl"
+            className="h-auto flex flex-col items-center border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl"
         >
             <img
                 className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-40 md:rounded-none md:rounded-s-lg"

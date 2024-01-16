@@ -2,8 +2,11 @@ import { cssBgVar, cssFgVar, applyStyle } from '../utils/helpers'
 
 export const Incoming = () => {
     return (
-        <div style={applyStyle('bg')} className="p-6 border border-gray-200 rounded-lg shadow ">
-            <div className="flex flex-col gap-4">
+        <div
+            style={applyStyle('bg')}
+            className="flex items-center justify-center p-6 border border-gray-200 rounded-lg shadow "
+        >
+            <div className="flex flex-col gap-4 justify-center">
                 <h5
                     style={applyStyle('color', { fromVar: cssFgVar })}
                     className="mb-2 self-center text-2xl font-bold tracking-tight"
